@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #f7f7f7, #e0e0e0);
 }
 
 nav {
@@ -29,9 +30,12 @@ nav ul li a {
     color: #fff;
 }
 
+
 article {
     text-align: center;
     margin: 20px;
+    animation: fadeInUp 2.5s;
+    -webkit-animation: fadeInUp 2.5s;
 }
 
 img {
@@ -98,16 +102,18 @@ footer a:hover {
     color: orange;
 }
 
-.skill-container{
+.skill-container {
     width: 40%;
 }
 
-body {
-    background: linear-gradient(45deg, #f7f7f7, #e0e0e0);
-}
 
-nav h1 {
+
+h1 {
     animation: fadeInDown 1.5s;
+    padding-top: 20px;
+    font-size: 45px;
+
+    color: #dc6666;
 }
 
 @keyframes fadeInDown {
@@ -136,6 +142,7 @@ article table tbody tr {
 
 footer h3 {
     animation: fadeInUp 1.5s;
+    -webkit-animation: fadeInUp 1.5s;
 }
 
 @keyframes fadeInUp {
@@ -177,12 +184,6 @@ footer a:hover {
     transform: scale(1.2);
 }
 
-input[type="submit"]:hover {
-    background-color: #555;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
 
 nav ul li:hover {
     background-color: #555;
@@ -198,4 +199,30 @@ nav ul li a.active::after {
     height: 2px;
     width: 100%;
     background-color: orange;
+}
+
+.about {
+    background-image: url("assets/Myself.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 15rem;
+    animation: fadeInFromLeft 2.5s;
+    -webkit-animation: fadeInFromLeft 2.5s;
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+}
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

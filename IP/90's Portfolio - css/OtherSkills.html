@@ -1,119 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Additional Skills</title>
-</head>
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
 
-<body>
+      /* Nav Styles */
+      .nav-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        background-color: #333;
+      }
+
+      .nav-items {
+        margin: 0;
+        padding: 10px 20px;
+      }
+
+      .nav-items a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .nav-items a:hover {
+        color: #ffcc00;
+      }
+
+      /* Section Styles */
+      section {
+        padding: 20px;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 32px;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      #blog-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .dsa {
+        flex: 1;
+        padding-right: 20px;
+      }
+
+      .photo {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .photo img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      hr {
+        border: 1px solid #333;
+      }
+
+      /* Blog Styles */
+      ol {
+        list-style: decimal;
+        padding-left: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      /* Video and Audio Styles */
+      video,
+      audio {
+        display: block;
+        margin: 0 auto;
+        transition: transform 0.5s ease; /* Add a smooth transition on hover */
+      }
+
+      video:hover,
+      audio:hover {
+        transform: scale(
+          1.04
+        ); /* Enlarge the video and audio elements on hover */
+      }
+
+      /* Footer Styles */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      footer a:hover {
+        color: #ffcc00;
+      }
+    </style>
+  </head>
+
+  <body>
     <nav>
-        <img src="/assets/logo.png" alt="Logo" class="logo" height="80px" width="150px">
-        <ul class="nav-menu">
-            <li class="nav-items"><a href="index.html">Home</a></li>
-            <li class="nav-items"><a href="contactme.html">Contact</a></li>
-            <li class="nav-items"><a href="OtherSkills.html">Know More</a></li>
-        </ul>
+      <img
+        src="/assets/logo.png"
+        alt="Logo"
+        class="logo"
+        height="80px"
+        width="150px"
+      />
+      <ul class="nav-menu">
+        <li class="nav-items"><a href="index.html">Home</a></li>
+        <li class="nav-items"><a href="contactme.html">Contact</a></li>
+        <li class="nav-items"><a href="OtherSkills.html">Know More</a></li>
+      </ul>
     </nav>
     <section>
-        <h1>Blogs</h1>
-        <hr>
-        <div>
-            <h3>Roadmap to DSA in 7 days</h3>
-            <div>
-                <h3>
-                    5 steps to learn DSA from scratch
-                    Learn at least one Programming Language
-                    Learn about Complexities
-                    Learn Data Structure and Algorithms
-                </h3>
-                <ol>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Array
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">String
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Linked List
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch">
-                            Searching Algorithm
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Sorting
-                            Algorithm
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Divide and
-                            Conquer Algorithm
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Stack
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Queue
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Tree Data
-                            Structure
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Graph Data
-                            Structure
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Greedy
-                            Mehtodology
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Recursion
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Backtracking
-                            Algorithm
-                        </a></li>
-                    <li><a href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/">Dynamic
-                            Programming
-                        </a></li>
-                </ol>
-                <p>Practice, practice and practice more
-                    Compete and become a pro</p>
-            </div>
+      <h1>Blogs</h1>
+      <hr />
+      <h3>Roadmap to DSA in 7 days</h3>
+      <div id="blog-wrapper">
+        <div class="dsa">
+          <div>
+            <h3>
+              Learn at least one Programming Language, Learn about Complexities
+            </h3>
+            <ol>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Array
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >String
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Linked List
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch"
+                >
+                  Searching Algorithm
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Sorting Algorithm
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Divide and Conquer Algorithm
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Stack
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Queue
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Tree Data Structure
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Graph Data Structure
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Greedy Mehtodology
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Recursion
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Backtracking Algorithm
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/complete-roadmap-to-learn-dsa-from-scratch/"
+                  >Dynamic Programming
+                </a>
+              </li>
+            </ol>
+            <p>Practice, practice and practice more Compete and become a pro</p>
+          </div>
         </div>
-        <hr>
+        <div class="photo">
+          <img src="https://media1.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif?cid=ecf05e47ddf61qqjmc5dmx08puijq1j7p9fen2kkmi1bdkqu&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="DSA Animation" />
+        </div>
+      </div>
+      <hr />
     </section>
     <section>
-        <h1>Video lectures</h1>
-        <h3>Maths Lecture 1 : LPP</h3>
-        <video controls height="360" width="720">
-            <source src="assets/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <br>
-        <h3>Maths Lecture 2 : Probability</h3>
-        <video controls height="360" width="720">
-            <source src="assets/video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <hr>
+      <h1>Video lectures</h1>
+      <h3>Maths Lecture 1 : LPP</h3>
+      <video controls height="360" width="720">
+        <source src="assets/video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <br />
+      <h3>Maths Lecture 2 : Probability</h3>
+      <video controls height="360" width="720">
+        <source src="assets/video2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <hr />
     </section>
 
     <section>
-        <h1>Podcasts</h1>
-        <h3>My experience at Digiidunia</h3>
-        <audio controls>
-            <source src="assets/audio1.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag.
-        </audio>
-        <br>
-        <h3>My experience at JpMorgan</h3>
-        <audio controls>
-            <source src="assets/audio2.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag.
-        </audio>
-        <hr>
+      <h1>Podcasts</h1>
+      <h3>My experience at Digiidunia</h3>
+      <audio controls>
+        <source src="assets/audio1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+      <br />
+      <h3>My experience at JpMorgan</h3>
+      <audio controls>
+        <source src="assets/audio2.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+      <hr />
     </section>
     <footer>
-        <div>
-            <a href="https://instagram.com/altaf_alam_687?igshid=YmMyMTA2M2Y=" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/Altaf0032?t=B1Q2ywUf1cEJB5bns52t2w&s=09" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com/in/altaf-alam-432849234" class="fa fa-github"></a>
-            <a href="https://instagram.com/altaf_alam_687?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
-        </div>
-        <h3>&copy; Altaf Alam, All Rights Reserved</h3>
+      <div>
+        <a
+          href="https://instagram.com/altaf_alam_687?igshid=YmMyMTA2M2Y="
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/Altaf0032?t=B1Q2ywUf1cEJB5bns52t2w&s=09"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/altaf-alam-432849234"
+          class="fa fa-github"
+        ></a>
+        <a
+          href="https://instagram.com/altaf_alam_687?igshid=YmMyMTA2M2Y="
+          class="fa fa-instagram"
+        ></a>
+      </div>
+      <h3>&copy; Altaf Alam, All Rights Reserved</h3>
     </footer>
-
-</body>
-
+  </body>
 </html>
