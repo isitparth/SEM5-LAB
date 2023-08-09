@@ -1,34 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(45deg, #f7f7f7, #e0e0e0);
-}
 
-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 40rem;
-    text-align: center;
-    background-color: #333;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    padding: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
 
 
 article {
@@ -85,22 +55,7 @@ article table tbody tr:hover {
     background-color: #ddd;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
 
-footer a {
-    text-decoration: none;
-    color: #fff;
-    margin: 5px;
-}
-
-footer a:hover {
-    color: orange;
-}
 
 .skill-container {
     width: 40%;
@@ -140,11 +95,6 @@ article table tbody tr {
     transition: background-color 0.3s;
 }
 
-footer h3 {
-    animation: fadeInUp 1.5s;
-    -webkit-animation: fadeInUp 1.5s;
-}
-
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -157,9 +107,6 @@ footer h3 {
     }
 }
 
-footer a {
-    transition: color 0.3s;
-}
 
 article h4:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -178,27 +125,6 @@ article ul {
 
 article table {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer a:hover {
-    transform: scale(1.2);
-}
-
-
-nav ul li:hover {
-    background-color: #555;
-}
-
-nav ul li a.active {
-    color: orange;
-}
-
-nav ul li a.active::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: orange;
 }
 
 .about {
