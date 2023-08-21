@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function getSum() {
+            let num1 = 5, num2 = 2;
+            let summ = num1 + num2;
+
+            const newNode = document.createElement("p");
+            const textNode = document.createTextNode(summ);
+            newNode.appendChild(textNode);
+
+            const cont = document.querySelector(".c1");
+            cont.insertAfter(newNode, null);
+
+        }
+
+        function changeTitle() {
+            document.getElementById('title1').innerHTML = "Hello this is pikachu"
+        }
+
+        function changeBgColor() {
+            let cont = document.querySelectorAll(".container");
+            for (i of cont) {
+                cont.style.backgroundColor = "red";
+            }
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container c1">
+        <h2 id="title1">Hello this is altaf</h2>
+        <h5>hello bachcho</h5>
+        <h5>5+2</h5>
+        <!-- <h5 id="sum"></h5> -->
+    </div>
+    <div class="container">
+        <button onclick="changeTitle()">Change Title</button>
+        <button onclick="changeBgColor()">Change BgColor</button>
+
+        <button onclick="getSum()">Get Sum</button>
+    </div>
+</body>
+
+</html>
