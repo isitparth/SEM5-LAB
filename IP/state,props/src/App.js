@@ -9,13 +9,16 @@ function App() {
   let day = date.getDate();
   let month = date.getMonth() + 1;
   let year = date.getFullYear();
-  
+
   let currentDate = `${day}-${month}-${year}`;
-    return (
+  return (
     <div className="App">
-        {/* <MyDate CurrDate={currentDate} /> */}
-        <Counter/>
-        <ConditionalRendering/>
+      <h2>Date</h2>
+      <MyDate CurrDate={currentDate} /> <hr/>
+      <h2>Counter</h2>
+      <Counter /> <hr/>
+      <h2>Conditional Rendering Examples</h2>
+      <ConditionalRendering />
     </div>
   );
 }
