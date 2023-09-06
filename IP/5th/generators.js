@@ -5,7 +5,7 @@ function* generator() {
     return 'result';
     yield 'aman';
 }
-  
+
 let it = generator();
 console.log("paused1")
 console.log(it.next());
