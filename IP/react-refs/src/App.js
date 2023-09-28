@@ -1,39 +1,39 @@
 import React, { useRef, useEffect } from 'react';
 
 const App = () => {
-
   return (
     <div>
-      <h2> callback ref example</h2>
+      <h2>Callback Ref Example</h2>
       <CallbackRefExample />
 
-      <h2>Forwarding ref example</h2>
+      <h2>Forwarding Ref Example</h2>
       <ForwardRefExample />
+
     </div>
   );
 };
 
-const ChildComponent = React.forwardRef((props, ref) =>{
+const ChildComponent = React.forwardRef((props, ref) => {
   return <input ref={ref} />;
-})
+});
 
-const ForwardRefExample = () =>{
+const ForwardRefExample = () => {
   const parentRef = useRef(null);
   const childRef = useRef(null);
 
-  useEffect(()=>{
-    if(parentRef.current && childRef.current){
+  useEffect(() => {
+    if (parentRef.current && childRef.current) {
       parentRef.current.focus();
     }
-  }, [])
+  }, []);
 
   return (
     <div>
-      <ChildComponent forwardRef={childRef} />
+      <ChildComponent ref={childRef} />
       <input ref={parentRef} />
     </div>
-  )
-} 
+  );
+};
 
 const CallbackRefExample = () => {
   const inputRef = useRef(null);
@@ -50,5 +50,6 @@ const CallbackRefExample = () => {
     </div>
   );
 };
+
 
 export default App;
